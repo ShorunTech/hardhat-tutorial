@@ -10,3 +10,11 @@ contract Whitelist {
     // Create a mapping of whitelistedAddresses
     // if an address is whitelisted, we would set it to true, it is false by default for all other addresses.
     mapping(address => bool) public whitelistedAddresses;
+
+
+    // numAddressesWhitelisted would be used to keep track of how many addresses have been whitelisted
+    // NOTE: Don't change this variable name, as it will be part of verification
+    uint8 public numAddressesWhitelisted;
+
+    // Setting the Max number of whitelisted addresses
+    // User will put the value at the time of deployment
