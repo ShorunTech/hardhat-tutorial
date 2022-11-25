@@ -20,3 +20,8 @@
     height: 50%;
     margin-left: 20%;
 }
+
+.title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
