@@ -51,3 +51,8 @@ export default function Home() {
     }
     return web3Provider;
   };
+
+
+   /**
+   * addAddressToWhitelist: Adds the current connected address to the whitelist
+   */
