@@ -31,3 +31,9 @@ export default function Home() {
    *
    * @param {*} needSigner - True if you need the signer, default false otherwise
    */
+
+   const getProviderOrSigner = async (needSigner = false) => {
+    // Connect to Metamask
+    // Since we store `web3Modal` as a reference, we need to access the `current` value to get access to the underlying object
+    const provider = await web3ModalRef.current.connect();
+    const web3Provider = new providers.Web3Provider(provider);
