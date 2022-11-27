@@ -73,3 +73,6 @@ export default function Home() {
          // call the addAddressToWhitelist from the contract
       const tx = await whitelistContract.addAddressToWhitelist();
       setLoading(true);
+      // wait for the transaction to get mined
+      await tx.wait();
+      setLoading(false);
