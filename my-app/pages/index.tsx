@@ -84,3 +84,7 @@ export default function Home() {
       console.error(err);
     }
   };
+
+   /**
+   * getNumberOfWhitelisted:  gets the number of whitelisted addresses
+   */
