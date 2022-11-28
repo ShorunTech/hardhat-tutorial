@@ -109,3 +109,6 @@ export default function Home() {
     console.error(err);
   }
 };
+ /**
+   * checkIfAddressInWhitelist: Checks if the address is in whitelist
+   */
