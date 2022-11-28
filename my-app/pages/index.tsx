@@ -76,3 +76,11 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
+
+      // get the updated number of addresses in the whitelist
+      await getNumberOfWhitelisted();
+      setJoinedWhitelist(true);
+    } catch (err) {
+      console.error(err);
+    }
+  };
